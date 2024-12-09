@@ -1,6 +1,4 @@
 #!/bin/bash
-# MIT License
-# Copyright (c) Ethan Perry, Andy Lyu
 unalias -a # Get rid of aliases
 echo "unalias -a" >> ~/.bashrc
 echo "unalias -a" >> /root/.bashrc
@@ -13,20 +11,6 @@ if [ "$EUID" -ne 0 ]; then
     echo "Run as Root"
     exit
 fi
-
-# List of Functions:
-# zeroUidFun
-# rootCronFun
-# apacheSecFun
-# fileSecFun
-# netSecFun
-# aptUpFun
-# aptInstFun
-# deleteFileFun
-# firewallFun
-# sysCtlFun
-# scanFun
-# repoFun
 
 startFun() {
     clear
